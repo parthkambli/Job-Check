@@ -8,15 +8,7 @@ function changeNav(){
 
 // Nav-on-Scrool
 
-var Nav = document.getElementById("NavBar");
-window.addEventListener('scroll', function(){
-    if (this.window.pageYOffset > 100){
-        Nav.classList.add('Nav-on-scroll');
-    }
-    else{
-        Nav.classList.remove('Nav-on-scroll');
-    }
-});
+
 
 // {/* <script type="text/javascript">
 //     var nav = document.querySelector('nav');

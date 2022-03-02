@@ -114,8 +114,6 @@ body {
   background-image: url("https://i.ibb.co/kXTGqBK/BG.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  /* height: 100%; */
-  width: 100%;
 }
 
 /* HOME */
@@ -130,7 +128,7 @@ body {
   margin: 20px;
 }
 
-.title p {
+.Home-Title {
   margin: 0px;
 }
 
@@ -287,5 +285,11 @@ ul {
     > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .banner-image{
+    background-size: cover;
   }
 }
