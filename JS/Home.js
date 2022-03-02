@@ -18,17 +18,6 @@ window.addEventListener('scroll', function(){
     }
 });
 
-// var mq = window.matchMedia("(max-width: 425px)");
-var Backgroun = document.getElementById("Bg-img");
-if ($(window).width()>=425) {
-    // window width is at less than 425px
-    Backgroun.classList.remove("vh-100");
-    Backgroun.style.height = "300px";
-}
-else {
-    // window width is greater than 425px
-    Backgroun.classList.add("vh-100")
-}
 
 // {/* <script type="text/javascript">
 //     var nav = document.querySelector('nav');
