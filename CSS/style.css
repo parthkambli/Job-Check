@@ -209,7 +209,7 @@ body {
 /* Footer */
 footer {
   /* width:100%; */
-  height: 150px;
+  height: auto;
   background-color: #072227;
 }
 
@@ -237,7 +237,7 @@ ul {
   margin: 5px;
 }
 
-@media screen and (max-width: 773px) and (min-width: 575px) {
+@media screen and (max-width: 773px) and (min-width: 576px) {
   .job-submit span {
     /* visibility: hidden; */
     display: none;
@@ -246,21 +246,21 @@ ul {
 
 @media screen and (max-width: 575px) {
   .job-keyword {
-    height: 50px;
+    height: 40px;
     width: 100%;
     border-radius: 5px;
     margin: 5px;
   }
 
   .job-location {
-    height: 50px;
+    height: 40px;
     width: 100%;
     border-radius: 5px;
     margin: 5px;
   }
 
   .job-submit {
-    height: 50px;
+    height: 40px;
     width: 100%;
     border-radius: 5px;
     margin: 5px;
@@ -277,7 +277,7 @@ ul {
 
   .input-group
     > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
-    margin-left: 0px;
+    margin-left: 5px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
