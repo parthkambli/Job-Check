@@ -1,17 +1,291 @@
-body{
-    margin: auto;
+body {
+  margin: auto;
+}
+/* 
+.darkmod{
+  background-color: black;
+  color: white;
+} */
+
+/* NavBar */
+/* .navbar {
+  border-bottom: 1px solid #72898d;
+} */
+
+.Nav-on-toggle {
+  opacity: 0.7;
+  background-color: #072227;
 }
 
-.Logo{
-    width: 200px;
-    /* height: 50px; */
+.Nav-on-scroll {
+  background-color: #072227;
 }
 
-.Nav{
-    height: 60px;
+.nav-item {
+  font-size: large;
 }
 
-.BG-IMG{
-    height: 100%;
+.nav-item:hover {
+  font-size: larger;
+}
+
+.Post-btn {
+  background-color: #aefeff;
+  float: right;
+  opacity: 1;
+  /* z-index: 2; */
+}
+
+/* TOGGLE BUTTON */
+.navbar-toggler {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-toggler span {
+  margin: 0;
+  padding: 0;
+}
+
+.toggler-icon {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+}
+
+.middle-bar {
+  margin-top: 0px;
+}
+
+/* When Navigation clicked */
+.navbar-toggler .top-bar {
+  margin-top: 0px;
+  transform: rotate(135deg);
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  margin-top: 0px;
+  transform: rotate(-135deg);
+}
+
+/* when Navbar collapse */
+
+.navbar-toggler.collapsed .top-bar {
+  margin-top: -20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  margin-top: 20px;
+  transform: rotate(0deg);
+}
+
+/* BACKGROUND IMAGE */
+
+.banner-image {
+  background-image: url("https://i.ibb.co/kXTGqBK/BG.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* height: 100%; */
+  width: 100%;
+}
+
+/* HOME */
+
+.main-container {
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.title {
+  margin: 20px;
+}
+
+.title p {
+  margin: 0px;
+}
+
+/* SEARCH */
+
+.search-box {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+}
+
+.job-keyword {
+  height: 70px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.job-location {
+  height: 70px;
+}
+
+.job-submit {
+  height: 70px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.job-submit span {
+  font-size: larger;
+}
+
+/* Job By Location */
+.City-img {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Mumbai-img {
+  background-image: url("https://i.ibb.co/Hx0LH0q/Mumbai.jpg");
+}
+
+.Pune-img {
+  background-image: url("https://i.ibb.co/tswVcGr/Pune.jpg");
+}
+
+.Delhi-img {
+  background-image: url("https://i.ibb.co/P9nSgPc/Delhi.jpg");
+}
+
+.Chennai-img {
+  background-image: url("https://i.ibb.co/3z0dQK6/Chennai.jpg");
+}
+
+.Bengaluru-img {
+  background-image: url("https://i.ibb.co/JnD90jx/Bengaluru.jpg");
+}
+
+.Hyderabad-img {
+  background-image: url("https://i.ibb.co/pdswspm/Hyderabad.jpg");
+}
+
+.City-card {
+  /* border-radius: 20px; */
+  border: 0px;
+}
+
+/* Registered Company */
+
+.Company-img {
+  height: 150px;
+}
+
+/* Footer */
+footer {
+  /* width:100%; */
+  height: 150px;
+  background-color: #072227;
+}
+
+
+.foot-container {
+  width: 100%;
+  /* height: 100%; */
+}
+
+ul {
+  list-style-type: none;
+}
+
+.foot-col {
+  border-left: 1px solid #6c757d;
+}
+
+.foot-logo {
+  width: 150px;
+  height: 50px;
+}
+
+.social-li {
+  float: left;
+  margin: 5px;
+}
+
+@media screen and (max-width: 773px) and (min-width: 575px) {
+  .job-submit span {
+    /* visibility: hidden; */
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .job-keyword {
+    height: 50px;
     width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .job-location {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .job-submit {
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px;
+  }
+
+  .search-box {
+    border-radius: 5px;
+  }
+
+  .input-group > .form-control,
+  .input-group > .form-select {
+    width: 100%;
+  }
+
+  .input-group
+    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    margin-left: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+
+  .input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+  .input-group:not(.has-validation)
+    > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
 }

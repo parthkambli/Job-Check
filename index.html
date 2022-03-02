@@ -1,57 +1,379 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JobCheck</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" href="Logo/Favicon.JPG">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/q9YMJYq/Favicon.jpg">
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/0a32aeb545.js" crosszorigin="anonymous"></script>
+
+    <!-- owl-carousel css     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl-carousel theam.css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Job Check</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light Nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="Logo" src="Logo/Job_Check.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Companies</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Resumes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Jobs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Freelance</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li> -->
-                    </ul>
+
+    <!-- NavBar -->
+    <nav id="NavBar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/6J5Cgns/Job-Check.png" alt="Logo" width="150" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button onClick="changeNav()" class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Companies</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="#">Resumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Post a Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Freelance</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Resume Builder</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Learn & Skill Up</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Subscription</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button type="button" class="Post-btn">+ Post A Job</button> -->
+        </div>
+    </nav>
+
+    <!-- Home -->
+
+    <!-- background img -->
+    <div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+        <!-- Heading -->
+        <div class="content justify-content-center main-container">
+            <div class="title">
+                <p class="h1 text-white display-4">The Easiest Way to Get Your New Job</p>
+                <p class="lead text-white">Find Jobs, Employment & Career Opportunities</p>
+            </div>
+            <!-- Search box -->
+            <div class="input-group search-box ">
+                <input type="text" aria-label="Keyword" class="job-keyword form-control col-sm-4 col-12"
+                    placeholder="Keyword">
+                <input type="text" aria-label="Location" class="job-location form-control col-sm-4 col-12"
+                    placeholder="City">
+                <button class="job-submit btn btn-dark col-sm-2 col-12" type="submit" id="submit"><i
+                        class="fa-solid fa-2xl fa-magnifying-glass"></i> <span>Search</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Job BY Category -->
+    <section>
+        <div class="container-fluid my-5">
+            <p class="h1 text-center fw-bold display-6 mb-5">Jobs By Category</p>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+                                <h4 class="card-title">Freshers</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">51.8k Jobs</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-user-gear fa-2xl"></i>
+                                <h4 class="card-title">Engineering</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">48.5k Jobs</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-brands fa-black-tie fa-2xl"></i>
+                                <h4 class="card-title">Sales</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">30.2k Jobs</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-bullhorn fa-2xl"></i>
+                                <h4 class="card-title">Marketing</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">50k Jobs</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <i class="fa-solid fa-laptop-code fa-2xl"></i>
+                                <h4 class="card-title">Computer & IT</h4>
+                                <h6 class="card-subtitle mb-2 text-muted">78.6k Jobs</h6>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="search">
-        <img class="BG-IMG" src="Images/HomeBackGround.jpg" alt="BG">
+        </div>
+    </section>
+
+    <!-- Job By Location -->
+    <div class="container-fluid my-5">
+        <p class="h1 text-center fw-bold display-6 mb-5">Jobs By Location</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Mumbai-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Mumbai</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Pune-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Pune</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Delhi-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Delhi</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Chennai-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Chennai</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Bengaluru-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Bengaluru</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 p-2">
+                <div class="card City-card">
+                    <div class="City-img Hyderabad-img">
+                        <div class="card-body py-5">
+                            <h5 class="card-title text-center text-white display-4">Hyderabad</h5>
+                            <h6 class="card-subtitle mb-2 text-white text-center ">
+                                100.65k Jobs
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- Registered Company -->
+    <section>
+        <div class="container-fluid my-5">
+            <p class="h1 text-center fw-bold display-6 mb-5">Top Companies Registered</p>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card">
+                            <img src="https://i.ibb.co/0YJ09v3/Amazon.jpg" alt="" class="Company-img">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="https://i.ibb.co/5LyZJ1c/Airtel.jpg" alt="" class="Company-img">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="https://i.ibb.co/tpq5GJ2/Google.jpg" alt="" class="Company-img">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="https://i.ibb.co/xLXrLqr/Tata.jpg" alt="" class="Company-img">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card">
+                            <img src="https://i.ibb.co/1GSm4SV/Microsoft.png" alt="" class="Company-img">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <h5 class="text-white text-center">&copy; Job Check  2021</h5>
+        <hr class="my-2 text-white">
+        <div class="row foot-container">
+            <div class="col-3">
+                <ul>
+                    <li class="text-white"><img class="foot-logo" src="https://i.ibb.co/6J5Cgns/Job-Check.png" alt="logo"></li>
+                </ul>
+                <ul>
+                    <li class="social-li">
+                        <a href="#"><i class="fa-brands fa-facebook fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <i class="fa-brands fa-instagram fa-lg text-muted"></i>
+                    </li>
+                    <li class="social-li">
+                        <a href="#"><i class="fa-brands fa-twitter fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                    <li class="social-li">
+                        <a href="#"><i class="fa-brands fa-linkedin fa-lg text-muted"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 foot-col">
+                <ul>
+                    <li class="text-white">
+                        <i class="fa-solid fa-phone text-muted"></i> +91 8983444062
+                    </li>
+                    <li class="text-white">
+                        <i class="fa-solid fa-envelope-open-text text-muted"></i> Info@Jobcheck.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-3 foot-col">
+                <ul>
+                    <li class="text-white">About Us</li>
+                    <li class="text-white">Privacy policy</li>
+                    <li class="text-white">Terms & conditions</li>
+                </ul>
+            </div>
+            <div class="col-3 foot-col">
+                <ul>
+                    <li class="text-white">Help Center</li>
+                    <li class="text-white">Report issue</li>
+                    <li class="text-white">Fraud alert</li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl-carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Init owl-carousel -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
 </body>
+<script src="JS/Home.js"></script>
 
 </html>
