@@ -101,7 +101,7 @@ body {
 
 /* Banner-img */
 .banner-image {
-  background-image: url("../Images/panoramic-3306144.jpg");
+  background-image: url("https://i.ibb.co/ZKdpS2X/Compny-BG.jpg");
   /* background-size: 100% 100%; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -180,10 +180,10 @@ body {
 }
 
 .accordion-button::after {
-  background-image: url(../Images/icons8-plus-96.png);
+  background-image: url("https://i.ibb.co/Ny9pZHc/icons8-plus-96.png");
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url(../Images/icons8-minus-96.png);
+  background-image: url("https://i.ibb.co/WnrK8FL/icons8-minus-96.png");
 }
 
 .accordion-button:not(.collapsed) {
