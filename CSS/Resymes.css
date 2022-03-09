@@ -1,16 +1,18 @@
 
 /* Banner-img */
 .banner-image {
-  background-image: url("https://i.ibb.co/ZKdpS2X/Compny-BG.jpg");
-  /* background-size: 100% 100%; */
-  background-size: cover;
+  background-image: url("https://i.ibb.co/gg3ThLc/Resumes-BG.jpg");
+  background-size: cover; 
   background-repeat: no-repeat;
   height: 40vh;
+  
 }
 
 /* Heading */
-.Compny-Title {
+.Resumes-Title {
   text-align: center;
+  margin: auto;
+  font-weight: 400;
 }
 
 .main-container {
@@ -32,10 +34,8 @@
   background-color: #072227;
 }
 
-/* FILTER */
 
-
-
+/* Filter */
 .Filter-btn{
   margin: 20px 0px;
   background-color: #072227;
@@ -75,6 +75,12 @@
 
 }
 
+.filter-input{
+  height: 100%;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+
 .accordion-item{
   border: 0px;
 }
@@ -85,6 +91,8 @@
 .accordion-button:not(.collapsed)::after {
   background-image: url("https://i.ibb.co/WnrK8FL/icons8-minus-96.png");
 }
+
+
 
 .accordion-button:not(.collapsed) {
     color: black;
@@ -115,18 +123,18 @@
 
 /* Turnover */
 
-.T-Head{
-  padding: 16px 20px;
+.E-Head{
+  /* padding: 16px 20px; */
 }
 
-.T-slider{
+.E-slider{
   /* width: 400px; */
   padding: 0px 50px 0px 20px;
 }
 
-/* Compny cards */
 
-.compny-card{
+/* Candidate Card */
+.candidate-card{
   margin: 0px;
   border-radius: 0px;
   border: 0px;
@@ -138,22 +146,18 @@
   text-align: justify;
 }
 
-.Open-Position{
-  /* position: relative;
-  top: 10px;
-  right: 10px; */
-  float: right;
-}
 
-.Companiy-category-tag{
+.Candidate-profession{
   color: red
 }
 
-.Company-img{
-  height: 100%;
-  /* width: 100%; */
-  /* border: 2px solid red; */
-  /* border-radius: 50%; */
+.candidate-img-container{
+  text-align: center;
+  margin: auto;
+  padding: 2px;
+}
+.candidate-img{
+  border-radius: 50%;
 }
 
 .Details-btn{
@@ -161,7 +165,7 @@
   color: white;
   float: right;
   margin: 5px 0px;
-  width: 100px;
+  width: 160px;
 }
 
 .Details-btn:hover{
@@ -169,5 +173,3 @@
   color: #072227;
   border-color: #072227;
 }
-
-

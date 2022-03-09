@@ -1,5 +1,4 @@
 
-
 // Filter responsive
 var Filter = document.getElementById('Filter-col');
 var Filter_btn = document.getElementById('Filter-btn');
@@ -11,18 +10,18 @@ function MyFilter(ScreenSize) {
         Filter.classList.remove('Filter-hide');
         Filter_btn.classList.add('Filter-btn-hide');
     }
-}   
+}
 
 var ScreenSize = window.matchMedia("(max-width: 767px)")
 MyFilter(ScreenSize) // Call listener function at run time
 ScreenSize.addListener(MyFilter) // Attach listener function on state changes
 
 
-// Turnover
+// Experience
 var Slider = document.getElementById("slider");
-var Value = document.getElementById("T-value");
+var Value = document.getElementById("E-value");
 Value.innerHTML = Slider.value
 
-Slider.oninput = function(){
+Slider.oninput = function () {
     Value.innerHTML = this.value;
 }

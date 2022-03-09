@@ -11,6 +11,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <!-- my css -->
+    <link rel="stylesheet" href="CSS/navbar_Footer.css">
     <link rel="stylesheet" href="CSS/Compnies.css">
     <!-- Favicon -->
     <link rel="icon" href="https://i.ibb.co/q9YMJYq/Favicon.jpg">
@@ -19,7 +20,7 @@
     <script src="https://kit.fontawesome.com/0a32aeb545.js" crossorigin="anonymous"></script>
 
 
-    <title>Compnies</title>
+    <title>Job-Check Compnies</title>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
                         <a class="nav-link text-white " href="Compnies.html">Companies</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white " href="#">Resumes</a>
+                        <a class="nav-link text-white " href="Resumes.html">Resumes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white " href="#">job</a>
@@ -105,6 +106,7 @@
         <div>
 
             <div class="row">
+                <!-- FIlter -->
                 <div class="col-4 border-end border-2" id="Filter-col">
                     <div class="container Filter">
                         <h3 class="display-6 p-2 text-white Filter-titel">Filter</h3>
@@ -113,7 +115,9 @@
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Category
+                                        <p class="fs-4">
+                                            Category
+                                        </p>
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
@@ -162,7 +166,7 @@
                         </div>
                         <div class="Turnover">
                             <div class="T-Head">
-                                <label for="slider" class="form-label">Turnover :- <span id="T-value"></span>cr</label>
+                                <label for="slider" class="form-label fs-4">Turnover :- <span id="T-value"></span>cr</label>
                             </div>
                             <div class="T-slider">
                                 <input type="range" class="form-range" min="0" max="1000" step="10" value="10" id="slider">
@@ -172,6 +176,7 @@
                 </div>
 
                 <div class="col-md-8 p-4">
+                    <!-- Filter offcanvas -->
                     <button class="btn Filter-btn Filter-btn-hide" id="Filter-btn" type="button"
                         data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <i class="fa-solid fa-sliders text-muted"></i>
@@ -252,6 +257,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Compnies section -->
                     <div class="card compny-card">
                         <div class="row g-0">
                             <div class="col-md-4 text-center" style="max-height: 200px;">
@@ -415,6 +421,7 @@
         crossorigin="anonymous"></script>
 
 </body>
+<script src="JS/Navbar_Footer.js"></script>
 <script src="JS/Compnies.js"></script>
 
 </html>
