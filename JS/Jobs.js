@@ -25,6 +25,14 @@ Ex_Value.innerHTML = Ex_Slider.value
 Ex_Slider.oninput = function () {
     Ex_Value.innerHTML = this.value;
 }
+// OffCanvas Experience
+var O_Ex_Slider = document.getElementById("O-Ex-slider");
+var O_Ex_Value = document.getElementById("O-Ex-value");
+O_Ex_Value.innerHTML = O_Ex_Slider.value
+
+O_Ex_Slider.oninput = function () {
+    O_Ex_Value.innerHTML = this.value;
+}
 
 
 // Salary
@@ -34,4 +42,13 @@ Sal_Value.innerHTML = Sal_Slider.value
 
 Sal_Slider.oninput = function () {
     Sal_Value.innerHTML = this.value;
+}
+
+// OffCanvas Salary
+var O_Sal_Slider = document.getElementById("O-Sal-slider");
+var O_Sal_Value = document.getElementById("O-Sal-value");
+O_Sal_Value.innerHTML = O_Sal_Slider.value
+
+O_Sal_Slider.oninput = function () {
+    O_Sal_Value.innerHTML = this.value;
 }

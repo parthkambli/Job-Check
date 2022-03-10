@@ -18,10 +18,18 @@ ScreenSize.addListener(MyFilter) // Attach listener function on state changes
 
 
 // Experience
-var Slider = document.getElementById("slider");
-var Value = document.getElementById("E-value");
-Value.innerHTML = Slider.value
+var Ex_Slider = document.getElementById("Ex-slider");
+var Ex_Value = document.getElementById("Ex-value");
+Ex_Value.innerHTML = Ex_Slider.value
 
-Slider.oninput = function () {
-    Value.innerHTML = this.value;
+Ex_Slider.oninput = function () {
+    Ex_Value.innerHTML = this.value;
+}
+// OffCanvas Experience
+var O_Ex_Slider = document.getElementById("O-Ex-slider");
+var O_Ex_Value = document.getElementById("O-Ex-value");
+O_Ex_Value.innerHTML = O_Ex_Slider.value
+
+O_Ex_Slider.oninput = function () {
+    O_Ex_Value.innerHTML = this.value;
 }

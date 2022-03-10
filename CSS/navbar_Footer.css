@@ -2,15 +2,13 @@ body {
   margin: auto;
 }
 /* NavBar */
-.Nav-on-toggle {
-  opacity: 0.7;
-  background-color: #072227;
-}
-
 .Nav-on-scroll {
-  /* background-color: #072227; */
+  background-color: rgba(7, 34, 39);
+}
+.Nav-on-toggle {
   background-color: rgba(7, 34, 39, 0.8);
 }
+
 
 .nav-item {
   font-size: large;

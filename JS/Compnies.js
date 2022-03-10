@@ -26,3 +26,11 @@ Value.innerHTML = Slider.value
 Slider.oninput = function(){
     Value.innerHTML = this.value;
 }
+// OffCanvas Turnover
+var O_Slider = document.getElementById("O-slider");
+var O_Value = document.getElementById("O-T-value");
+O_Value.innerHTML = O_Slider.value
+
+O_Slider.oninput = function(){
+    O_Value.innerHTML = this.value;
+}
