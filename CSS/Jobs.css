@@ -1,0 +1,175 @@
+
+/* Banner-img */
+.banner-image {
+  background-image: url("https://i.ibb.co/gg3ThLc/Resumes-BG.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 40vh;
+  
+}
+
+/* Heading */
+.Resumes-Title {
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+}
+
+.main-container {
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+.title {
+  margin: 20px;
+}
+
+/* Search box */
+.search-box {
+  padding: 10px;
+}
+
+.Company-btn {
+  background-color: #072227;
+}
+
+
+/* Filter */
+.Filter-btn{
+  margin: 20px 0px;
+  background-color: #072227;
+  color: white;
+}
+
+.Filter-btn-hide {
+  display: none;
+}
+
+.btn-close{
+  background-image: none;
+  /* color: white; */
+  height: 40px;
+  width: 40px;
+}
+
+.offcanvas-title{
+  width: 100%;
+}
+
+.offcanvas-header{
+  background-color: #072227;
+  color: white;
+}
+
+.row {
+  --bs-gutter-x: 0rem;
+}
+
+.Filter-hide{
+  display: none;
+}
+
+.Filter-titel{
+  background-color: #072227;
+
+}
+
+.filter-input{
+  height: 100%;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+
+.accordion-item{
+  border: 0px;
+}
+
+.accordion-button::after {
+  background-image: url("https://i.ibb.co/Ny9pZHc/icons8-plus-96.png");
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("https://i.ibb.co/WnrK8FL/icons8-minus-96.png");
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: inherit;
+    outline: 0;
+    box-shadow: none;
+}
+
+.accordion-body ul{
+  padding: 2px;
+  margin: 0px;
+}
+
+.Category-item{
+  padding: 2px;
+}
+
+.dropdown a{
+  color: black;
+  text-decoration: none;
+}
+
+/* Turnover */
+
+.E-Head{
+  /* padding: 16px 20px; */
+}
+
+.E-slider{
+  /* width: 400px; */
+  padding: 0px 50px 0px 20px;
+}
+
+
+/* Jobs Card */
+
+.Jobs-card{
+  margin: 0px;
+  border-radius: 0px;
+  border: 0px;
+  border-top: 1px solid rgba(0,0,0,.125);
+  width: 100%;
+}
+
+.card-text{
+  text-align: justify;
+}
+
+.Post-date{
+  float: right;
+}
+
+.Job-Type{
+  color: red
+}
+
+.Company-img{
+  height: 100%;
+
+}
+
+.Details-btn{
+  background-color: #072227;
+  color: white;
+  float: right;
+  margin: 5px 5px;
+  width: 100px;
+}
+
+.Details-btn:hover{
+  background-color: white;
+  color: #072227;
+  border-color: #072227;
+}
