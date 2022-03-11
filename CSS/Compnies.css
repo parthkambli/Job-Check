@@ -11,6 +11,8 @@
 /* Heading */
 .Compny-Title {
   text-align: center;
+  margin: auto;
+  font-weight: 400;
 }
 
 .main-container {
@@ -21,15 +23,6 @@
 
 .title {
   margin: 20px;
-}
-
-/* Search box */
-.search-box {
-  padding: 10px;
-}
-
-.Company-btn {
-  background-color: #072227;
 }
 
 /* FILTER */

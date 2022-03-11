@@ -1,0 +1,53 @@
+/* Banner-img */
+.banner-image {
+  background-image: url("../Images/Skills.jpg");
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+
+/* Heading */
+.Skillup-Title {
+  text-align: center;
+  margin: auto;
+  font-weight: 400;
+}
+
+.main-container {
+  padding: 20px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Search */
+.search-input{
+    border-right: 0px!important;
+}
+.Search-btn{
+    background-color: #072227;
+    color: white;
+    border-left: 0px!important;
+    /* border-color: red; */
+}
+
+/* Course Suggestions */
+.Course-card{
+    height: 320px;
+}
+.Course-img{
+    height: 50%;
+}
+
+.title {
+  margin: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+    text-decoration: none;
+  color: black;
+}

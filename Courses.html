@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="CSS/navbar_Footer.css">
+    <link rel="stylesheet" href="CSS/Courses.css">
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.ibb.co/q9YMJYq/Favicon.jpg">
+
+    <!-- Font Awesome kit -->
+    <script src="https://kit.fontawesome.com/0a32aeb545.js" crossorigin="anonymous"></script>
+
+    <!-- owl-carousel css     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl-carousel theam.css -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Job-Check Resumes</title>
+</head>
+
+<body>
+
+    <!-- NavBar -->
+    <nav id="NavBar" class="navbar fixed-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.ibb.co/6J5Cgns/Job-Check.png" alt="Logo" width="150" height="40"
+                    class="d-inline-block align-text-top">
+            </a>
+            <button onClick="changeNav()"
+                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="Compnies.html">Companies</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link text-white " href="Resumes.html">Resumes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="Jobs.html">job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="#">Post a Job</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="Skillup.html">Learn & Skill Up</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Resume Builder</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Learn & Skill Up</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Subscription</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- <button type="button" class="Post-btn">+ Post A Job</button> -->
+        </div>
+    </nav>
+
+    <!-- banner-image -->
+    <div class="banner-image w-100 d-flex justify-content-center align-items-center" id="Bg-img">
+
+        <!-- Heading -->
+        <div class="content justify-content-center main-container">
+            <div class="title">
+                <!-- <p class="Skillup-Title text-white display-4">Skill UP</p> -->
+                <p class="Skillup-SubTitle text-white display-6">Find courses that are best for your career</p>
+            </div>
+            <div class="px-4">
+                <div class="input-group input-group-lg Search-box">
+                    <input type="text" class="form-control search-input border border-5"
+                        aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" placeholder="Keyword">
+                    <button type="button" class="btn Search-btn border border-5"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="container-fluid my-3">
+            <p class="h1 text-center fw-bold display-6">Software Courses</p>
+            <div class="row">
+                <div class="owl-carousel owl-theme">
+                    <a href="CourseDetail.html">
+                        <div class="item">
+                            <div class="card Course-card">
+                                <img src="Images/Personality.jpg" alt="Personality Course"
+                                    class="card-img-top Course-img">
+                                <div class="card-body">
+                                    <h4>Personality Development</h4>
+                                    <p>
+                                        490 <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        <span class="text-decoration-line-through text-muted">2000 <i
+                                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style=color:gold></i>4.5 (92,677)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="CourseDetail.html">
+                        <div class="item">
+                            <div class="card Course-card">
+                                <img src="Images/python-Course.jpg" alt="Personality Course"
+                                    class="card-img-top Course-img">
+                                <div class="card-body justify-content-center">
+                                    <h4>Pythone Training</h4>
+                                    <p>
+                                        490 <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        <span class="text-decoration-line-through text-muted">2000 <i
+                                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style=color:gold></i>4.5 (92,677)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="CourseDetail.html">
+                        <div class="item">
+                            <div class="card Course-card">
+                                <img src="Images/data-science.png" alt="Personality Course"
+                                    class="card-img-top Course-img">
+                                <div class="card-body justify-content-center">
+                                    <h4>Data Science</h4>
+                                    <p>
+                                        490 <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        <span class="text-decoration-line-through text-muted">2000 <i
+                                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style=color:gold></i>4.5 (92,677)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="CourseDetail.html">
+                        <div class="item">
+                            <div class="card Course-card">
+                                <img src="Images/Web-Dev.jpg" alt="Personality Course" class="card-img-top Course-img">
+                                <div class="card-body justify-content-center">
+                                    <h4>Web Development and Designing</h4>
+                                    <p>
+                                        490 <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        <span class="text-decoration-line-through text-muted">2000 <i
+                                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style=color:gold></i>4.5 (92,677)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="CourseDetail.html">
+                        <div class="item">
+                            <div class="card Course-card">
+                                <img src="Images/Financial-Analyst.jpg" alt="Personality Course"
+                                    class="card-img-top Course-img">
+                                <div class="card-body justify-content-center">
+                                    <h4>Financial Analyst Course</h4>
+                                    <p>
+                                        490 <i class="fa-solid fa-indian-rupee-sign"></i>
+                                        <span class="text-decoration-line-through text-muted">2000 <i
+                                                class="fa-solid fa-indian-rupee-sign"></i></span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-star" style=color:gold></i>4.5 (92,677)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl-carousel js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Init owl-carousel -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+</body>
+<script src="JS/Navbar_Footer.js"></script>
+
+</html>

@@ -1,0 +1,82 @@
+.navbar {
+  background-color: #072227;
+}
+
+.Course-Detail-Bg {
+  background-color: #67b3b0;
+  /* height: 40%; */
+  /* border: 2px solid red; */
+}
+
+.Course-Detail-img {
+  /* background-image: url("../Images/Web-Dev.jpg");
+  background-size: 100% 100%; */
+  /* padding: 50px; */
+  float: right;
+  width: 40%;
+  margin-top: 66px;
+  padding: 20px;
+}
+
+.Course-Detail {
+  display: inline-block;
+  border: 0px solid white;
+  width: 60%;
+  margin-top: 66px;
+  padding-left: 120px;
+  height: 400px;
+}
+
+.star {
+  color: gold;
+}
+
+.Course-Highlight-Section {
+  /* padding-left: 120px; */
+    padding: 50px;
+}
+
+.Course-Highlight {
+  border: 1px solid gray;
+}
+
+.Course-Highlight ul {
+  list-style-type: disc;
+}
+
+.Show-less {
+  display: none;
+}
+
+.card-img-top{
+    background-image: url("../Images/Web-Dev.jpg");
+    background-size: contain;
+}
+
+.play{
+    font-size: 5em;
+}
+
+.Buy{
+    background-color: #072227;
+    color: white;
+    width: 60%;
+    height: 100%;
+}
+
+.Buy:hover{
+    background-color: white;
+    color: #072227;
+    border: 2px solid #072227;
+}
+
+.Like{
+    padding: 5px 0px;
+    width: 30%;
+    height: 100%;
+    border: 2px solid #072227;
+}
+
+.Red-Heart{
+    color: red;
+}
