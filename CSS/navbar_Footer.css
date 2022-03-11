@@ -9,7 +9,6 @@ body {
   background-color: rgba(7, 34, 39, 0.8);
 }
 
-
 .nav-item {
   font-size: large;
 }
@@ -18,11 +17,31 @@ body {
   font-size: larger;
 }
 
-.Post-btn {
-  background-color: #aefeff;
+.Post-btn-position {
+  position: absolute;
+  right: 50px;
+}
+
+.Post-btn-style {
+  background-color: #072227;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.Post-btn-style:hover {
+  background-color: #35858b;
+  color: white;
+}
+
+.Signup-btn-position {
+  position: absolute;
+  right: 180px;
+}
+
+/* SignIN/Signup */
+.Signup-btn{
   float: right;
-  opacity: 1;
-  /* z-index: 2; */
 }
 
 /* TOGGLE BUTTON */

@@ -163,4 +163,8 @@
   border-color: #072227;
 }
 
+.Details-btn a{
+  text-decoration: none;
+  color: inherit;
+}
 

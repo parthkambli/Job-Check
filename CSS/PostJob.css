@@ -1,0 +1,13 @@
+.navbar {
+  background-color: #072227;
+}
+
+section{
+  margin-top: 66px;
+  padding: 50px;
+}
+
+.Post{
+    float: right;
+    width: 200px;
+}

@@ -32,7 +32,7 @@
                     class="d-inline-block align-text-top">
             </a>
             <button onClick="changeNav()"
-                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around TG-Btn" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
@@ -53,15 +53,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-white " href="Jobs.html">job</a>
                     </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link text-white " href="#">Post a Job</a>
+                        </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="#">Post a Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="Skillup.html">Learn & Skill Up</a>
+                        <a class="nav-link text-white " href="Skillup.html">Learn & Sill Up</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -76,11 +76,93 @@
                             <li><a class="dropdown-item" href="#">Subscription</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="PostJob.html">
+                            <button type="button" class=" btn Post-btn-style Post-btn-position " id="Post-btn">+ Post A
+                                Job</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class=" btn Post-btn-style Signup-btn-position " data-bs-toggle="modal"
+                            data-bs-target="#Login" id="Signup-btn">Login</button>
+                    </li>
                 </ul>
             </div>
-            <!-- <button type="button" class="Post-btn">+ Post A Job</button> -->
         </div>
     </nav>
+    
+    <!-- Button trigger modal -->
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <p class="text-muted m-2">
+    
+                        <button type="button" class="btn"> Forgot Password </button>
+                        <button type="button" class="btn Signup-btn" data-bs-toggle="modal" data-bs-dismiss="modal"
+                            data-bs-target="#Register">Register / Create Acount</button>
+                    </p>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade " id="Register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="RegisterLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RegisterLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <hr>
+                    <p>I want to register as </p>
+    
+                    <select class="form-select" aria-label="Default select example" id="test">
+                        <option selected>Candidate</option>
+                        <option value="1">Employer</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- banner-image -->
     <div class="banner-image w-100 d-flex justify-content-center align-items-center" id="Bg-img">
@@ -422,17 +504,20 @@
                                 <div class="accordion" id="bootstrap_accordion">
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Date-Posted">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#Date-Posted">
                                                 Date Posted
                                             </button>
                                         </div>
-                                        <div id="Date-Posted" class="accordion-collapse collapse show" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Date-Posted" class="accordion-collapse collapse show"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <ul>
                                                     <hr class="mt-0">
                                                     <li class="Category-item">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
                                                             <label class="form-check-label" for="flexRadioDefault1">
                                                                 Last Hour
                                                             </label>
@@ -440,7 +525,8 @@
                                                     </li>
                                                     <li class="Category-item">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
                                                             <label class="form-check-label" for="flexRadioDefault1">
                                                                 Last 24 Hour
                                                             </label>
@@ -448,7 +534,8 @@
                                                     </li>
                                                     <li class="Category-item">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
                                                             <label class="form-check-label" for="flexRadioDefault1">
                                                                 Last 7 Days
                                                             </label>
@@ -456,7 +543,8 @@
                                                     </li>
                                                     <li class="Category-item">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
                                                             <label class="form-check-label" for="flexRadioDefault1">
                                                                 Last 14 Days
                                                             </label>
@@ -464,98 +552,110 @@
                                                     </li>
                                                     <li class="Category-item">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                                            <input class="form-check-input" type="radio"
+                                                                name="flexRadioDefault" id="flexRadioDefault1">
                                                             <label class="form-check-label" for="flexRadioDefault1">
                                                                 Last 30 Days
                                                             </label>
                                                         </div>
                                                     </li>
-                                
+
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#Specialism">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#Specialism">
                                                 Specialism
                                             </button>
                                         </div>
-                                        <div id="Specialism" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Specialism" class="accordion-collapse collapse"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <ul>
                                                     <hr class="mt-0">
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Software">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Software">
                                                         <label class="form-check-label" for="Software">
                                                             Software
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Designer">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Designer">
                                                         <label class="form-check-label" for="Designer">
                                                             Designer
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Marketing">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Marketing">
                                                         <label class="form-check-label" for="Marketing">
                                                             Marketing
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Real Estate Agent">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Real Estate Agent">
                                                         <label class="form-check-label" for="Real Estate Agent">
                                                             Real Estate Agent
-                                
+
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Translator">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Translator">
                                                         <label class="form-check-label" for="Translator">
                                                             Translator
                                                         </label>
                                                     </li>
-                                
+
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#Job-Type">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#Job-Type">
                                                 Job Type
                                             </button>
                                         </div>
-                                        <div id="Job-Type" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Job-Type" class="accordion-collapse collapse"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <ul>
                                                     <hr class="mt-0">
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Full Time">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Full Time">
                                                         <label class="form-check-label" for="Full Time">
                                                             Full Time
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Part Time">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Part Time">
                                                         <label class="form-check-label" for="Part Time">
                                                             Part Time
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Internship">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Internship">
                                                         <label class="form-check-label" for="Internship">
                                                             Internship
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Temporary">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Temporary">
                                                         <label class="form-check-label" for="Temporary">
                                                             Temporary
-                                
+
                                                         </label>
                                                     </li>
                                                 </ul>
@@ -564,73 +664,83 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#Education-Level">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#Education-Level">
                                                 Education Level
                                             </button>
                                         </div>
-                                        <div id="Education-Level" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Education-Level" class="accordion-collapse collapse"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <ul>
                                                     <hr class="mt-0">
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Associate Degree">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Associate Degree">
                                                         <label class="form-check-label" for="Associate Degree">
                                                             Associate Degree
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Bachelor Degree">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Bachelor Degree">
                                                         <label class="form-check-label" for="Bachelor Degree">
                                                             Bachelor Degree
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Certificate">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Certificate">
                                                         <label class="form-check-label" for="Certificate">
                                                             Certificate
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Diploma">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Diploma">
                                                         <label class="form-check-label" for="Diploma">
                                                             Diploma
-                                
+
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Doctorate Degree">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Doctorate Degree">
                                                         <label class="form-check-label" for="Doctorate Degree">
                                                             Doctorate Degree
                                                         </label>
                                                     </li>
                                                     <li class="Category-item">
-                                                        <input class="form-check-input" type="checkbox" value="" id="Master Degree">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="Master Degree">
                                                         <label class="form-check-label" for="Master Degree">
                                                             Master Degree
                                                         </label>
                                                     </li>
-                                
+
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#Experience">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#Experience">
                                                 Experience
                                             </button>
                                         </div>
-                                        <div id="Experience" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Experience" class="accordion-collapse collapse"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <div class="Ex">
                                                     <div class="O-Ex-Head">
-                                                        <label for="O-Ex-slider" class="form-label">Experience :- <span id="O-Ex-value"></span> Year or
+                                                        <label for="O-Ex-slider" class="form-label">Experience :- <span
+                                                                id="O-Ex-value"></span> Year or
                                                             more</label>
                                                     </div>
                                                     <div class="O-Ex-slider">
-                                                        <input type="range" class="form-range" min="0" max="30" step="1" value="5" id="O-Ex-slider">
+                                                        <input type="range" class="form-range" min="0" max="30" step="1"
+                                                            value="5" id="O-Ex-slider">
                                                     </div>
                                                 </div>
                                             </div>
@@ -638,20 +748,23 @@
                                     </div>
                                     <div class="accordion-item">
                                         <div class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#Offerd-Salary">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#Offerd-Salary">
                                                 Offerd Salary
                                             </button>
                                         </div>
-                                        <div id="Offerd-Salary" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                        <div id="Offerd-Salary" class="accordion-collapse collapse"
+                                            data-bs-parent="#bootstrap_accordion">
                                             <div class="accordion-body">
                                                 <div class="Salary">
                                                     <div class="O-Sal-Head">
-                                                        <label for="O-Sal-slider" class="form-label">Salary :- <span id="O-Sal-value"></span> Lakhs or
+                                                        <label for="O-Sal-slider" class="form-label">Salary :- <span
+                                                                id="O-Sal-value"></span> Lakhs or
                                                             more</label>
                                                     </div>
                                                     <div class="O-Sal-slider">
-                                                        <input type="range" class="form-range" min="1" max="10" step="1" value="2" id="O-Sal-slider">
+                                                        <input type="range" class="form-range" min="1" max="10" step="1"
+                                                            value="2" id="O-Sal-slider">
                                                     </div>
                                                 </div>
                                             </div>
@@ -676,7 +789,9 @@
                                     </h5>
                                     <p class="card-text mb-2">
                                         <small class="Job-Type">Full Time</small>
-                                        <button type="button" class="btn Details-btn">Details</button>
+                                        <a href="JobDetails.html">
+                                            <button type="button" class="btn Details-btn">Details</button>
+                                        </a>
                                         <button type="button" class="btn Details-btn">Apply</button>
                                     </p>
                                     <p class="card-text text-muted">
@@ -706,11 +821,14 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Sales Person<p class="card-text Post-date"><small class="text-muted">5 Months Ago</small></p>
+                                    <h5 class="card-title">Sales Person<p class="card-text Post-date"><small
+                                                class="text-muted">5 Months Ago</small></p>
                                     </h5>
                                     <p class="card-text mb-2">
                                         <small class="Job-Type">Full Time</small>
-                                        <button type="button" class="btn Details-btn">Details</button>
+                                        <a href="JobDetails.html">
+                                            <button type="button" class="btn Details-btn">Details</button>
+                                        </a>
                                         <button type="button" class="btn Details-btn">Apply</button>
                                     </p>
                                     <p class="card-text text-muted">
@@ -740,11 +858,14 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Delivery Boy<p class="card-text Post-date"><small class="text-muted">3 Months Ago</small></p>
+                                    <h5 class="card-title">Delivery Boy<p class="card-text Post-date"><small
+                                                class="text-muted">3 Months Ago</small></p>
                                     </h5>
                                     <p class="card-text mb-2">
                                         <small class="Job-Type">Part Time, Full Time</small>
-                                        <button type="button" class="btn Details-btn">Details</button>
+                                        <a href="JobDetails.html">
+                                            <button type="button" class="btn Details-btn">Details</button>
+                                        </a>
                                         <button type="button" class="btn Details-btn">Apply</button>
                                     </p>
                                     <p class="card-text text-muted">
@@ -774,11 +895,14 @@
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title">Network Engineer<p class="card-text Post-date"><small class="text-muted">7 Months Ago</small></p>
+                                    <h5 class="card-title">Network Engineer<p class="card-text Post-date"><small
+                                                class="text-muted">7 Months Ago</small></p>
                                     </h5>
                                     <p class="card-text mb-2">
                                         <small class="Job-Type">Full Time,Internship</small>
-                                        <button type="button" class="btn Details-btn">Details</button>
+                                        <a href="JobDetails.html">
+                                            <button type="button" class="btn Details-btn">Details</button>
+                                        </a>
                                         <button type="button" class="btn Details-btn">Apply</button>
                                     </p>
                                     <p class="card-text text-muted">

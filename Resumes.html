@@ -33,7 +33,7 @@
                     class="d-inline-block align-text-top">
             </a>
             <button onClick="changeNav()"
-                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around TG-Btn" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
@@ -49,20 +49,20 @@
                         <a class="nav-link text-white " href="Compnies.html">Companies</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white " href="#">Resumes</a>
+                        <a class="nav-link text-white " href="Resumes.html">Resumes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white " href="Jobs.html">job</a>
                     </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link text-white " href="#">Post a Job</a>
+                        </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="#">Post a Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="Skillup.html">Learn & Skill Up</a>
+                        <a class="nav-link text-white " href="Skillup.html">Learn & Sill Up</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -77,11 +77,94 @@
                             <li><a class="dropdown-item" href="#">Subscription</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="PostJob.html">
+                            <button type="button" class=" btn Post-btn-style Post-btn-position " id="Post-btn">+ Post A
+                                Job</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class=" btn Post-btn-style Signup-btn-position " data-bs-toggle="modal"
+                            data-bs-target="#Login" id="Signup-btn">Login</button>
+                    </li>
                 </ul>
             </div>
-            <!-- <button type="button" class="Post-btn">+ Post A Job</button> -->
         </div>
     </nav>
+    
+    <!-- Button trigger modal -->
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <p class="text-muted m-2">
+    
+                        <button type="button" class="btn"> Forgot Password </button>
+                        <button type="button" class="btn Signup-btn" data-bs-toggle="modal" data-bs-dismiss="modal"
+                            data-bs-target="#Register">Register / Create Acount</button>
+                    </p>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade " id="Register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="RegisterLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RegisterLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <hr>
+                    <p>I want to register as </p>
+    
+                    <select class="form-select" aria-label="Default select example" id="test">
+                        <option selected>Candidate</option>
+                        <option value="1">Employer</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- banner-image -->
     <div class="banner-image w-100 d-flex justify-content-center align-items-center" id="Bg-img">
@@ -286,18 +369,22 @@
                             </div>
                             <div class="accordion-item">
                                 <div class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Experience">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#Experience">
                                         Experience
                                     </button>
                                 </div>
-                                <div id="Experience" class="accordion-collapse collapse" data-bs-parent="#bootstrap_accordion">
+                                <div id="Experience" class="accordion-collapse collapse"
+                                    data-bs-parent="#bootstrap_accordion">
                                     <div class="accordion-body">
                                         <div class="Ex">
                                             <div class="Ex-Head">
-                                                <label for="Ex-slider" class="form-label">Experience :- <span id="Ex-value"></span> Year or more</label>
+                                                <label for="Ex-slider" class="form-label">Experience :- <span
+                                                        id="Ex-value"></span> Year or more</label>
                                             </div>
                                             <div class="Ex-slider">
-                                                <input type="range" class="form-range" min="0" max="30" step="1" value="5" id="Ex-slider">
+                                                <input type="range" class="form-range" min="0" max="30" step="1"
+                                                    value="5" id="Ex-slider">
                                             </div>
                                         </div>
                                     </div>
@@ -672,8 +759,11 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Vikas Pawar</h5>
                                     <p class="card-text mb-2"><small class="Candidate-profession">Web Developer, Web
-                                            Designer</small><button type="button" class="btn Details-btn">View
-                                            Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            Designer</small>
+                                            <a href="ResumeDetails.html" class="text-decoration-none">
+                                                <button type="button" class="btn Details-btn">View
+                                                Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            </a>
                                     </p>
                                     <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Pune</p>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -687,14 +777,18 @@
                     <div class="card candidate-card">
                         <div class="row g-0">
                             <div class="col-md-4 candidate-img-container" style="max-height: 200px;">
-                                <img src="https://i.ibb.co/26JYCzS/Profile2.jpg" alt="Profile2" class="img-fluid candidate-img">
+                                <img src="https://i.ibb.co/26JYCzS/Profile2.jpg" alt="Profile2"
+                                    class="img-fluid candidate-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Priya Kapoor</h5>
                                     <p class="card-text mb-2"><small class="Candidate-profession">Interior
-                                            Designer</small><button type="button" class="btn Details-btn">View
-                                            Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            Designer</small>
+                                            <a href="ResumeDetails.html" class="text-decoration-none">
+                                                <button type="button" class="btn Details-btn">View
+                                                Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            </a>
                                     </p>
                                     <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -708,14 +802,18 @@
                     <div class="card candidate-card">
                         <div class="row g-0">
                             <div class="col-md-4 candidate-img-container" style="max-height: 200px;">
-                                <img src="https://i.ibb.co/8z2cst5/Profile3.jpg" alt="Profile3" class="img-fluid candidate-img">
+                                <img src="https://i.ibb.co/8z2cst5/Profile3.jpg" alt="Profile3"
+                                    class="img-fluid candidate-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Jennifer Adams</h5>
                                     <p class="card-text mb-2"><small class="Candidate-profession">Chartered
-                                            Accountant</small><button type="button" class="btn Details-btn">View
-                                            Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            Accountant</small>
+                                            <a href="ResumeDetails.html" class="text-decoration-none">
+                                                <button type="button" class="btn Details-btn">View
+                                                Resume <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            </a>
                                     </p>
                                     <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Mumbai</p>
                                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
@@ -729,14 +827,19 @@
                     <div class="card candidate-card border-bottom">
                         <div class="row g-0">
                             <div class="col-md-4 candidate-img-container" style="max-height: 200px;">
-                                <img src="https://i.ibb.co/XY3qxct/Profile4.jpg" alt="Profile4" class="img-fluid candidate-img">
+                                <img src="https://i.ibb.co/XY3qxct/Profile4.jpg" alt="Profile4"
+                                    class="img-fluid candidate-img">
                             </div>
                             <div class="col-md-8">
                                 <div class="card-body">
                                     <h5 class="card-title">Adam Anderson</h5>
                                     <p class="card-text mb-2"><small class="Candidate-profession">Telecommunications,
-                                            Networking</small><button type="button" class="btn Details-btn">View Resume
-                                            <i class="fa-solid fa-file-invoice float-end my-1"></i></button></p>
+                                            Networking</small>
+                                            <a href="ResumeDetails.html" class="text-decoration-none">
+                                                <button type="button" class="btn Details-btn">View Resume
+                                                <i class="fa-solid fa-file-invoice float-end my-1"></i></button>
+                                            </a>
+                                        </p>
                                     <p class="card-text text-muted"><i class="fa-solid fa-location-dot"></i> Delhi </p>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
                                         sit consectetur placeat nam deserunt ullam repellendus beatae inventore

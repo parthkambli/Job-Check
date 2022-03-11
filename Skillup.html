@@ -41,7 +41,7 @@
                     class="d-inline-block align-text-top">
             </a>
             <button onClick="changeNav()"
-                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button"
+                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around TG-Btn" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
@@ -62,15 +62,15 @@
                     <li class="nav-item">
                         <a class="nav-link text-white " href="Jobs.html">job</a>
                     </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link text-white " href="#">Post a Job</a>
+                        </li> -->
                     <li class="nav-item">
-                        <a class="nav-link text-white " href="#">Post a Job</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white " href="Skillup.html">Learn & Skill Up</a>
+                        <a class="nav-link text-white " href="Skillup.html">Learn & Sill Up</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
-                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
@@ -85,11 +85,94 @@
                             <li><a class="dropdown-item" href="#">Subscription</a></li>
                         </ul>
                     </li>
+                    <li class="nav-item">
+                        <a href="PostJob.html">
+                            <button type="button" class=" btn Post-btn-style Post-btn-position " id="Post-btn">+ Post A
+                                Job</button>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class=" btn Post-btn-style Signup-btn-position " data-bs-toggle="modal"
+                            data-bs-target="#Login" id="Signup-btn">Login</button>
+                    </li>
                 </ul>
             </div>
-            <!-- <button type="button" class="Post-btn">+ Post A Job</button> -->
         </div>
     </nav>
+    
+    <!-- Button trigger modal -->
+    
+    <!-- Login Modal -->
+    <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="LoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="LoginLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <p class="text-muted m-2">
+    
+                        <button type="button" class="btn"> Forgot Password </button>
+                        <button type="button" class="btn Signup-btn" data-bs-toggle="modal" data-bs-dismiss="modal"
+                            data-bs-target="#Register">Register / Create Acount</button>
+                    </p>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Register Modal -->
+    <div class="modal fade " id="Register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="RegisterLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="RegisterLabel">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group input-group-lg my-2">
+                        <input type="email" class="form-control" placeholder="Email" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <div class="input-group input-group-lg my-2">
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                    <hr>
+                    <p>I want to register as </p>
+    
+                    <select class="form-select" aria-label="Default select example" id="test">
+                        <option selected>Candidate</option>
+                        <option value="1">Employer</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- banner-image -->
     <div class="banner-image w-100 d-flex justify-content-center align-items-center" id="Bg-img">
@@ -202,7 +285,7 @@
                     <a href="CourseDetail.html">
                         <div class="item">
                             <div class="card Course-card">
-                                <img src="https://i.ibb.co/5GMnTFY/python-Course.jpg" alt="python-Course" 
+                                <img src="https://i.ibb.co/5GMnTFY/python-Course.jpg" alt="python-Course"
                                     class="card-img-top Course-img">
                                 <div class="card-body justify-content-center">
                                     <h4>Pythone Training</h4>
@@ -238,11 +321,12 @@
                             </div>
                         </div>
                     </a>
-                    
+
                     <a href="CourseDetail.html">
                         <div class="item">
                             <div class="card Course-card">
-                            <img src="https://i.ibb.co/JqqCGrt/Web-Dev.jpg" alt="Web-Dev" class="card-img-top Course-img">
+                                <img src="https://i.ibb.co/JqqCGrt/Web-Dev.jpg" alt="Web-Dev"
+                                    class="card-img-top Course-img">
                                 <div class="card-body justify-content-center">
                                     <h4>Web Development and Designing</h4>
                                     <p>
