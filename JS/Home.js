@@ -1,21 +1,17 @@
+function MyTheam() {
+    document.body.classList.toggle('darkmode');
+    var ModeBtn = document.getElementById("Mode-btn");
+    ModeBtn.classList.toggle("btn-light");
+    ModeBtn.classList.toggle("btn-dark");
+    if (ModeBtn.innerHTML === "Dark Mode") {
+        ModeBtn.innerHTML = "Light Mode";
+    }
+    else {
+        ModeBtn.innerHTML = "Dark Mode";
+    }
+}
 
 
 
 
-// {/* <script type="text/javascript">
-//     var nav = document.querySelector('nav');
-
-//     window.addEventListener('scroll', function () {
-//         if (window.pageYOffset > 100) {
-//         nav.classList.add('bg-dark', 'shadow');
-//         } else {
-//         nav.classList.remove('bg-dark', 'shadow');
-//         }
-//       });
-// </script> */}
-
-// function changeMode(){
-//     var myBody = document.body;
-//     myBody.classList.toggle('darkmod')
-// }
 
