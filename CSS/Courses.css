@@ -35,9 +35,15 @@
 .Course-card{
     height: 320px;
 }
-.Course-img{
-    height: 50%;
+.Course-card:hover {
+  transform: scale(1.05);
 }
+
+.Course-img {
+  height: 50%;
+  width: 100%;
+}
+
 
 .title {
   margin: 20px;

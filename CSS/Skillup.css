@@ -1,4 +1,3 @@
-
 /* Banner-img */
 .banner-image {
   background-image: url("https://i.ibb.co/s6V9CtH/Skills.jpg");
@@ -22,40 +21,46 @@
 }
 
 /* Search */
-.search-input{
-    border-right: 0px!important;
+.search-input {
+  border-right: 0px !important;
 }
-.Search-btn{
-    background-color: #072227;
-    color: white;
-    border-left: 0px!important;
-    /* border-color: red; */
+.Search-btn {
+  background-color: #072227;
+  color: white;
+  border-left: 0px !important;
+  /* border-color: red; */
 }
 
 /* Course Category */
-.Category-card{
-    height: 120px;
-    text-align: center;
-    margin: auto;
+.Category-card {
+  height: 120px;
+  text-align: center;
+  margin: auto;
 }
 
 /* Course Suggestions */
-.Course-card{
-    height: 320px;
+.Course-card {
+  height: 320px;
 }
-.Course-img{
-    height: 50%;
+.Course-card:hover {
+  transform: scale(1.05);
+}
+
+.Course-img {
+  height: 50%;
+  width: 100%;
 }
 
 .title {
   margin: 20px;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
-a:hover{
-    text-decoration: none;
+
+.course-card:hover {
+  text-decoration: none;
   color: black;
 }

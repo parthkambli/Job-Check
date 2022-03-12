@@ -39,8 +39,12 @@
   width: 100%;
 }
 
+
 .Post-date{
   float: right;
+}
+.Company-img{
+  height: 100%;
 }
 
 .Details-btn{
