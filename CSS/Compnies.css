@@ -168,3 +168,10 @@
   color: inherit;
 }
 
+/* Theam */
+
+.darkmode {
+  background-color: black;
+  color: white;
+}
+

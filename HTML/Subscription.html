@@ -12,7 +12,7 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="../CSS/navbar_Footer.css">
-    <link rel="stylesheet" href="../CSS/CourseDetail.css">
+    <link rel="stylesheet" href="../CSS/Subscription.css">
     <!-- Favicon -->
     <link rel="icon" href="https://i.ibb.co/q9YMJYq/Favicon.jpg">
 
@@ -20,7 +20,7 @@
     <script src="https://kit.fontawesome.com/0a32aeb545.js" crossorigin="anonymous"></script>
 
 
-    <title>Job-Check Skillup</title>
+    <title>Job-Check Subscription</title>
 </head>
 
 <body>
@@ -32,9 +32,9 @@
                     class="d-inline-block align-text-top">
             </a>
             <button onClick="changeNav()"
-                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around TG-Btn" type="button"
-                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+                class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around TG-Btn"
+                type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="toggler-icon top-bar"></span>
                 <span class="toggler-icon middle-bar"></span>
                 <span class="toggler-icon bottom-bar"></span>
@@ -53,23 +53,22 @@
                     <li class="nav-item">
                         <a class="nav-link text-white " href="Jobs.html">job</a>
                     </li>
-                    <!-- <li class="nav-item">
-                            <a class="nav-link text-white " href="#">Post a Job</a>
-                        </li> -->
                     <li class="nav-item">
                         <a class="nav-link text-white " href="Skillup.html">Learn & Sill Up</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Theam & Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                            <li><a onClick="MyTheam()" class="dropdown-item" id="Mode-btn" href="#">Dark Mode</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Resume Builder</a></li>
+
+
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -90,9 +89,9 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- Button trigger modal -->
-    
+
     <!-- Login Modal -->
     <div class="modal fade" id="Login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="LoginLabel" aria-hidden="true">
@@ -104,20 +103,20 @@
                 </div>
                 <div class="modal-body">
                     <div class="input-group input-group-lg my-2">
-                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg">
+                        <input type="text" class="form-control" placeholder="User Name"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <div class="input-group input-group-lg my-2">
                         <input type="text" class="form-control" placeholder="Password" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <p class="text-muted m-2">
-    
+
                         <button type="button" class="btn"> Forgot Password </button>
                         <button type="button" class="btn Signup-btn" data-bs-toggle="modal" data-bs-dismiss="modal"
                             data-bs-target="#Register">Register / Create Acount</button>
                     </p>
-    
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -141,16 +140,16 @@
                             aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <div class="input-group input-group-lg my-2">
-                        <input type="text" class="form-control" placeholder="User Name" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg">
+                        <input type="text" class="form-control" placeholder="User Name"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <div class="input-group input-group-lg my-2">
-                        <input type="password" class="form-control" placeholder="Password" aria-label="Sizing example input"
-                            aria-describedby="inputGroup-sizing-lg">
+                        <input type="password" class="form-control" placeholder="Password"
+                            aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
                     </div>
                     <hr>
                     <p>I want to register as </p>
-    
+
                     <select class="form-select" aria-label="Default select example" id="test">
                         <option selected>Candidate</option>
                         <option value="1">Employer</option>
@@ -164,93 +163,126 @@
         </div>
     </div>
     <!-- Banner -->
-    <section>
-        <!-- Left Section / Info -->
-        <div class="Course-Detail-Bg">
-            <div class="Course-Detail justify-content-center">
-                <p class="display-4 text-white">Web Development and Designing</p>
-                <p class="fs-4 text-white">COMPLETELY REDONE - The only course you need to learn web development - HTML,
-                    CSS, JS, Node,and More!</p>
-                <p class="text-white">
-                    4.7
-                    <i class="fa-solid fa-star star"></i>
-                    <i class="fa-solid fa-star star"></i>
-                    <i class="fa-solid fa-star star"></i>
-                    <i class="fa-solid fa-star star"></i>
-                    <i class="fa-solid fa-star-half-stroke star"></i>
-                    (230,582 rating) 768,145 Learners
-                </p>
-                <p class="text-white">
-                    <!-- created by Colt Steel -->
-                    <span class="p-2">
-                        <i class="fa-solid fa-clock-rotate-left text-muted"></i> Last updated 3/2022
-                    </span>
-                    <span class="p-2">
-                        <i class="fa-solid fa-globe text-muted"></i> English
-                    </span>
-                </p>
-            </div>
-            <div class="Course-Detail-img justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-img-top justify-content-center text-center p-4">
-                        <p class="p-2 text-white m-0"><i class="fa-solid fa-circle-play play"></i></p>
-                        <p class="p-2 text-white m-0 fw-bold">Pri-View This course</p>
+    <div class="pricing-banner p-4">
+        <p class="display-5 text-white m-0">Pricing</p>
+        <p class="fs-6 text-white">Keep up to date with the latest news</p>
+    </div>
+    <!-- Bellow Banner -->
+    <section class="p-5">
+        <div class="Title">
+            <p class="display-5 text-center text-capitalize m-0">Buy Our Plans And Packeges</p>
+            <p class="fs-6 text-center text-capitalize mb-4">choose planes sutable for you</p>
+        </div>
+        <!-- <div class="row row-cols-1 row-cols-md-3 mb-3 text-center p-5">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 Card-1-Head">
+                        <h4 class="my-0 fw-normal m-4 p-4"> Basic Plan</h4>
+                        <h4 class="my-0 fw-normal m-4 p-4"> 600 <i class="fa-solid fa-indian-rupee-sign"></i> </h4>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">
-                            <p class="card-text fw-bold">
-                                490
-                                <i class="fa-solid fa-indian-rupee-sign"></i>
-                                <span class="text-decoration-line-through text-muted">
-                                    2000
-                                    <i class="fa-solid fa-indian-rupee-sign"></i></span>
-                            </p>
-                        </h5>
-
-                        <div class="px-4">
-                            <p>
-                                <button type="button" class="btn Buy ">Buy Now</button>
-                                <button onClick="Like()" type="button" class="btn Like "><i
-                                        class="fa-regular fa-heart fa-2xl" id="heart"></i></button>
-                            </p>
-                        </div>
-
+                        <h1 class="card-title pricing-card-title">$0<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
                     </div>
                 </div>
             </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 Card-2-Head">
+                        <h4 class="my-0 fw-normal">Standard Plan</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 Card-3-Head">
+                        <h4 class="my-0 fw-normal"> Golden Plan</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$29<small class="text-muted fw-light">/mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+        <div class="row justify-content-center">
+            <div class="jumbotron Pcard-1 col-4 text-center p-0 m-2">
+                <div class="price-card-top text-center p-4 m-3">
+                    <h4>Basic Plan</h4>
+                    <div class="display-4 price">600 <i class="fa-solid fa-indian-rupee-sign my-4 fs-2"></i></div>
+                    <p class="text-muted">1 month</p>
+                </div>
+                <div class="price-card-body text-center text-white m-3">
+                    <p class="p-2">2 Job Posting</p>
+                    <p class="p-2">Job displayed for 30 days</p>
+                    <p class="p-2">Companiy displayed 6 months</p>
+                    <p class="p-2">Premium Support 24/7</p>
+                    <button type="button" class="btn Buy-btn">
+                        <p class="fs-4 mb-2">Buy</p>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="jumbotron Pcard-2 col-4 text-center p-0 m-2">
+                <div class="price-card-top text-center p-4 m-3">
+                    <h4>Basic Plan</h4>
+                    <div class="display-4 price">3000 <i class="fa-solid fa-indian-rupee-sign my-4 fs-2"></i></div>
+                    <p class="text-muted">6 month</p>
+                </div>
+                <div class="price-card-body text-center text-white m-3">
+                    <p class="p-2">12 Job Posting</p>
+                    <p class="p-2">Job displayed for 6 months</p>
+                    <p class="p-2">Companiy displayed permanent</p>
+                    <p class="p-2">Premium Support 24/7</p>
+                    <button type="button" class="btn M-Buy-btn">
+                        <p class="fs-4 mb-2">Buy</p>
+                    </button>
+                    
+                </div>
+            </div>
+            <div class="jumbotron Pcard-3 col-4 text-center p-0 m-2">
+                <div class="price-card-top text-center p-4 m-3">
+                    <h4>Basic Plan</h4>
+                    <div class="display-4 price">5000 <i class="fa-solid fa-indian-rupee-sign my-4 fs-2"></i></div>
+                    <p class="text-muted">1 year</p>
+                </div>
+                <div class="price-card-body text-center text-white m-3">
+                    <p class="p-2">25 Job Posting</p>
+                    <p class="p-2">Job displayed for 1 Year</p>
+                    <p class="p-2">Companiy displayed permanent</p>
+                    <p class="p-2">Premium Support 24/7</p>
+                    <button type="button" class="btn Buy-btn"><p class="fs-4 mb-2">Buy</p></button>
+                    
+                </div>
+            </div>
         </div>
-    </section>
-    <!-- Bellow banner -->
-    <section class="Course-Highlight-Section">
-        <div class="Course-Highlight">
-            <p class="display-6 fw-bold p-4">
-                What you'll learn
-            </p>
-            <ul>
-                <li>The ins and outs of HTML5, CSS3, and Modern JavaScript for 2021</li>
-                <li>Create responsive, accessible, and beautiful layouts</li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti rem accusantium
-                    voluptate nam laborum voluptas nisi odio? Ullam ipsam magni fugiat neque dolorum corporis temporibus
-                    suscipit quod, eveniet aliquid.</li>
-                <span class="Show-less" id="Show-more">
-                    <li>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    </li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.</li>
-                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.</li>
-
-                </span>
-            </ul>
-            <button onClick=ShowMore() type="button" class="btn btn-outline-primary m-4" id="Show-btn">Show
-                More</button>
-        </div>
 
     </section>
-
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
         <h5 class="text-white text-center">&copy; Job Check 2021</h5>
         <hr class="my-2 text-white">
@@ -324,11 +356,12 @@
 
     </footer>
 
+    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
 </body>
 <script src="../JS/Navbar_Footer.js"></script>
-<script src="../JS/CourseDetails.js"></script>
-
+<!-- <script src="../JS/Compnies.js"></script> -->
 </html>

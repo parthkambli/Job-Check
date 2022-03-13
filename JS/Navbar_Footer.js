@@ -24,3 +24,4 @@ window.addEventListener('scroll', function () {
         Nav.classList.remove('Nav-on-scroll');
     }
 });
+

@@ -1,0 +1,70 @@
+.navbar {
+  background-color: #072227;
+}
+
+.pricing-banner {
+  background-color: #67b3b0;
+  margin-top: 66px;
+}
+
+/* .Card-2-Head {
+  background-color: #67b3b0;
+  color: white;
+}
+
+.Card-1-Head, .Card-3-Head {
+  background-color: #072227;
+  color: white;
+} */
+
+.row {
+  margin: 0px;
+}
+
+.jumbotron {
+  background-color: #67b3b0;
+  border-radius: 20px;
+  width: 400px;
+}
+
+.Pcard-2 {
+  background-color: #072227;
+}
+
+.price-card-top {
+  background-color: white;
+  border-radius: 20px;
+}
+
+h4 {
+  color: black;
+}
+
+.price {
+  color: #072227;
+  font-weight: 700;
+}
+
+.Buy-btn {
+  background-color: #072227;
+  color: white;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.Buy-btn:hover {
+  background-color: white;
+  color: #072227;
+}
+
+.M-Buy-btn {
+  background-color: #67b3b0;
+  color: white;
+  width: 200px;
+  border-radius: 50px;
+}
+
+.M-Buy-btn:hover{
+    background-color: white;
+    color: #072227;
+}

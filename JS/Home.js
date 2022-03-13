@@ -1,3 +1,9 @@
+
+
+
+
+
+// Theam Dark / Light mode
 function MyTheam() {
     document.body.classList.toggle('darkmode');
     var ModeBtn = document.getElementById("Mode-btn");
@@ -10,8 +16,3 @@ function MyTheam() {
         ModeBtn.innerHTML = "Dark Mode";
     }
 }
-
-
-
-
-
