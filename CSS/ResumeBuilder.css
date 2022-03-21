@@ -1,0 +1,14 @@
+.navbar {
+  background-color: #072227;
+}
+
+section{
+  margin-top: 66px;
+  padding: 50px;
+}
+
+.ProfileIcon{
+    font-size: 50px;
+    color: #072227;
+    /* border: 2px solid black; */
+}

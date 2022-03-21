@@ -12,7 +12,7 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="../CSS/navbar_Footer.css">
-    <link rel="stylesheet" href="../CSS/JobDetails.css">
+    <link rel="stylesheet" href="../CSS/ResumeBuilder.css">
     <!-- Favicon -->
     <link rel="icon" href="https://i.ibb.co/q9YMJYq/Favicon.jpg">
 
@@ -20,11 +20,10 @@
     <script src="https://kit.fontawesome.com/0a32aeb545.js" crossorigin="anonymous"></script>
 
 
-    <title>Job-Check Compny</title>
+    <title>Job-Check ResumeBuilder</title>
 </head>
 
 <body>
-
     <!-- NavBar -->
     <nav id="NavBar" class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
@@ -60,14 +59,16 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" href="#" id="navbarScrollingDropdown"
                             role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                            Theam & Services
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                            <li><a class="dropdown-item" href="#">Dark Mode</a></li>
+                            <li><a onClick="MyTheam()" class="dropdown-item" id="Mode-btn" href="#">Dark Mode</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="ResumeBuilder.html">Resume Builder</a></li>
+
+
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -162,132 +163,64 @@
         </div>
     </div>
 
-    <!-- banner-image -->
-    <div class="banner-image w-100 d-flex justify-content-center align-items-center" id="Bg-img">
-
-        <!-- Heading -->
-        <div class="content justify-content-center main-container">
-            <div class="title">
-                <p class="Compny-Title text-white display-4"> Job Details</p>
-            </div>
-        </div>
-    </div>
-    <!-- Bellow Banner -->
     <section>
         <div class="row">
-            <!-- Left Section -->
-            <div class="col-md-8 p-4">
-                <!-- Job Info -->
-                <div class="p-4">
-                    <p class="fs-3 m-0">
-                        Data Coordinator <small class="Job-Type fs-6">Full Time,Internship</small>
-                    </p>
-                    <div class="row">
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom ">
-                            <i class="fa-solid fa-money-bill-1-wave fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Salary</label>
-                                <div class="text-muted">2 Laks P.A</div>
-                            </div>
+            <!-- left section -->
+            <div class="col-8">
+                <div class="display-6 my-4">
+                    Create your Resume
+                    <hr>
+                </div>
+                <div class="fs-6 fw-bold">
+                    Personal Details
+                </div>
+                <div class="row">
+                    <div class="col-md-6 my-4">
+                        <label for="Full-Name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="Full-Name" placeholder="What's your good name ?" required>
+                    </div>
+                    <div class="col-md-6 my-4 d-flex">
+                        <div class="ProfileIcon d-inline-block">
+                            <button type="button" class="btn btn-link  ProfileIcon fa-solid fa-user-plus text-decoration-none"></button>
                         </div>
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom">
-                            <i class="fa-solid fa-location-dot fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Location</label>
-                                <div class="text-muted">Pune</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom">
-                            <i class="fa-solid fa-grip-lines fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Category</label>
-                                <div class="text-muted">CS, IT</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom">
-                            <i class="fa-solid fa-calendar-days fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Posted </label>
-                                <div class="text-muted">3 months ago</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom">
-                            <i class="fa-solid fa-briefcase fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Recuired Experience</label>
-                                <div class="text-muted">0-3</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 my-4 border-bottom">
-                            <i class="fa-solid fa-business-time fa-2xl text-muted"></i>
-                            <div class="d-inline-block px-4 align-middle ">
-                                <label>Office Timing</label>
-                                <div class="text-muted">9 to 5</div>
-                            </div>
+                        <div class="pt-3 ps-2">
+                            Upload Photo <br>
+                            <small>Allowed file formats: jpg, jpeg, png</small>
                         </div>
                     </div>
-                </div>
-                <!-- Job Description -->
-                <div class="p-4">
-                    <p class="fs-3 m-0">
-                        Job Description
-                    </p>
-                    <p class="about-body">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate libero blanditiis
-                        possimus maiores nostrum porro saepe! Ab qui sint a! Dolorum architecto neque natus rem quasi
-                        est soluta facilis!
-                    </p>
-                    <p class="about-body">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor
-                        repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate
-                        exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque
-                        laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?
-                    </p>
+                    <div class="col-md-6 my-4">
+                        <label for="Email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="Email" placeholder="What's your Email ?" required>
+                    </div>
+                    <div class="col-md-6 my-4">
+                        <label for="Phone-num" class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" id="Phone-num" placeholder="Mobile Number" required>
+                    </div>
+                    <div class="col-md-6 my-4">
+                        <label for="Work-Ex" class="form-label">Total Work Experience</label>
+                        <input type="text" class="form-control" id="Work-Ex" placeholder="What's your Total Work Experience" required>
+                    </div>
+                    <div class="col-12 my-4">
+                        <label for="tag-line" class="form-label">Tag Line</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Add catchy tag line" id="tag-line"></textarea>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
-            <!-- Right Section -->
-            <div class="col-md-4">
-                <div class="card Right-section" style="width: 18rem;">
-                    <img src="https://i.ibb.co/3WYLCN6/Infosys.jpg" alt="Infosys" class="card-img-top" alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Infosis</h5>
-                        <hr>
-                        <p class="card-text text-muted">
-                            <i class="fa-solid fa-link  "></i> infosis.co.in
-                        </p>
-                        <p class="card-text text-muted">
-                            <i class="fa-solid fa-phone"></i> +91 4526855783
-                        </p>
-                        <p class="card-text text-muted">
-                            <i class="fa-solid fa-envelope"></i> Infosis@demo.com
-                        </p>
-                        <button type="button" class="btn Apply-btn">Apply</button>
-                        <div class="socials text-center p-4">
-                            <ul>
-                                <li class="social-li">
-                                    <a href="#"><i class="fa-brands fa-facebook fa-lg text-muted"></i>
-                                    </a>
-                                </li>
-                                <li class="social-li">
-                                    <i class="fa-brands fa-instagram fa-lg text-muted"></i>
-                                </li>
-                                <li class="social-li">
-                                    <a href="#"><i class="fa-brands fa-twitter fa-lg text-muted"></i>
-                                    </a>
-                                </li>
-                                <li class="social-li">
-                                    <a href="#"><i class="fa-brands fa-linkedin fa-lg text-muted"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+            <!-- right section -->
+            <div class="col-4">
 
-                    </div>
-                </div>
             </div>
         </div>
     </section>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 
     <!-- FOOTER -->
     <footer>
@@ -362,15 +295,7 @@
         </div>
 
     </footer>
-
-
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+ 
 </body>
-<script src="../JS/Navbar_Footer.js"></script> 
-</html> 
+<script src="../JS/Navbar_Footer.js"></script>
+</html>
