@@ -1,0 +1,40 @@
+[
+    {
+        "course_id" : 1,
+        "course_title" : "Web Development and Designing",
+        "Sub_title" : "COMPLETELY REDONE - The only course you need to learn web development - HTML, CSS, JS, Node,and More!",
+        "category" : "Software",
+        "rating" : 4.7,
+        "rating_count" : 230582,
+        "Learners_count" : 768145,
+        "Last_update" : "3/2022",
+        "Language" : "English",
+        "content" : "The ins and outs of HTML5, CSS3, and Modern JavaScript for 2021, Create responsive, accessible, and beautiful layouts, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis corrupti rem accusantium voluptate nam laborum voluptas nisi odio? Ullam ipsam magni fugiat neque dolorum corporis temporibus suscipit quod, eveniet aliquid.Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ab iusto nisi nam mollitia.",
+        "Classes" : {
+            "Class_1" : "Vedio link",
+            "Class_2" : "Vedio link",
+            "Class_3" : "Vedio link",
+            "Class_4" : "Vedio link",
+            "Class_5" : "Vedio link"
+        }
+    },
+    {
+        "course_id" : 2,
+        "course_title" : "Personality Development",
+        "Sub_title" : "Perfect Course for Personality Development",
+        "category" : "Personal Growth",
+        "rating" : 4.2,
+        "rating_count" : 230242,
+        "Learners_count" : 542145,
+        "Last_update" : "2/2022",
+        "Language" : "English",
+        "content" : "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?",
+        "Classes" : {
+            "Class_1" : "Vedio link",
+            "Class_2" : "Vedio link",
+            "Class_3" : "Vedio link",
+            "Class_4" : "Vedio link",
+            "Class_5" : "Vedio link"
+        }
+    }
+]

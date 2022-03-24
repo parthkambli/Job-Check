@@ -1,0 +1,62 @@
+[
+    {
+        "Company_id" : 1,
+        "C_Name" : "Infosis",
+        "Display_img" : "https://i.ibb.co/x8JCnBC/Infosys-Bg.jpg",
+        "Logo_img" : "https://i.ibb.co/3WYLCN6/Infosys.jpg",
+        "Since" : 2002,
+        "Jobs_Posted" : 2,
+        "State_id" : 1,
+        "City_id" : 2,
+        "Address" : "Infosys Limited Pune, Plot No. 1, Hinjawadi Phase II, Hinjewadi Rajiv Gandhi Infotech Park, Hinjawadi, Pune, Maharashtra 411057",
+        "Category" : "Digital Services",
+        "Team_Size" : "101 - 200",
+        "Turnover" : "10 - 20 cr",
+        "about" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate libero blanditiis possimus maiores nostrum porro saepe! Ab qui sint a! Dolorum architecto neque natus rem quasi est soluta facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?",
+        "jobs_posted" : {
+            "Job_id" : [1,2]
+        },
+        "contack" : {
+            "Website" : "infosis.co.in",
+            "Phone_No" : ["+91 2653225845","+91 4458565237"],
+            "E-mail" : "Infosis@demo.com",
+            "social_links" : {
+                "FB": "https://www.facebook.com/Infosys_2002",
+                "Instagram": "https://www.instagram.com/Infosys_2002",
+                "Twiter": "https://twitter.com/Infosys_2002",
+                "linkedin": "https://www.linkedin.com/in/Infosys_2002-24880613a/"
+            }
+        }
+
+    },
+    {
+        "Company_id" : 2,
+        "C_Name" : "Bajaj",
+        "Display_img" : null,
+        "Logo_img" : "https://i.ibb.co/C89yWGr/Bajaj-Electricals-Logo.png",
+        "Since" : 1942,
+        "Jobs_Posted" : 4,
+        "State_id" : 1,
+        "City_id" : 1,
+        "Address" : "45/47, Veer Nariman Road, Kala Ghoda, Fort, Mumbai, Maharashtra 400023",
+        "Category" : "Electronics, Home Appliances",
+        "Team_Size" : "120 - 250",
+        "Turnover" : "15 - 25 cr",
+        "about" : "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate libero blanditiis possimus maiores nostrum porro saepe! Ab qui sint a! Dolorum architecto neque natus rem quasi est soluta facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?",
+        "jobs_posted" : {
+            "Job_id" : [3,4,5,6]
+        },
+        "contack" : {
+            "Website" : "Bajajelectricals.co.in",
+            "Phone_No" : ["+91 9485536428","+91 3486877549"],
+            "E-mail" : "Bajajelectricals@demo.com",
+            "social_links" : {
+                "FB": "https://www.facebook.com/Bajajelectricals",
+                "Instagram": "https://www.instagram.com/Bajajelectricals",
+                "Twiter": "https://twitter.com/Bajajelectricals",
+                "linkedin": "https://www.linkedin.com/in/Bajajelectricals-24880613a/"
+            }
+        }
+
+    }
+]

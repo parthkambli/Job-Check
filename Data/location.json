@@ -1,0 +1,44 @@
+[
+    {
+        "State_id" : 1,
+        "State" : "Maharashtra",
+        "City_id" : 1,
+        "City" : "Mumbai"
+    },
+    {
+        "State_id" : 1,
+        "State" : "Maharashtra",
+        "City_id" : 2,
+        "City" : "Pune"
+    },
+    {
+        "State_id" : 2,
+        "State" : "Delhi",
+        "City_id" : 3,
+        "City" : "Delhi"
+    },
+    {
+        "State_id" : 3,
+        "State" : "Gujrat",
+        "City_id" : 4,
+        "City" : "Surat"
+    },
+    {
+        "State_id" : 3,
+        "State" : "Gujrat",
+        "City_id" : 5,
+        "City" : "ahmedabad"
+    },
+    {
+        "State_id" : 5,
+        "State" : "Tamil Nadu",
+        "City_id" : 6,
+        "City" : "Chennai"
+    },
+    {
+        "State_id" : 6,
+        "State" : "Telangana",
+        "City_id" : 7,
+        "City" : "Hyderabad"
+    }
+]

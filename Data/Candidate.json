@@ -1,0 +1,137 @@
+[
+    {
+        "candidate_id": 1,
+        "Name": "Vikas Pawar",
+        "profile_img": "https://i.ibb.co/pw6wBcC/Profile1.jpg",
+        "Age" : 30,
+        "Gender" : "male",
+        "marital_status" : "Maried",
+        "profession": ["Web Developer", "Web Designer"],
+        "City_id": 2,
+        "State_id": 1,
+        "Address" : " HW87+G33, Konark Nagar, Clover Park, Viman Nagar, Pune, Maharashtra 411014, India",
+        "Work_Ex": "5 years",
+        "Current Salary": "20k",
+        "Expected_Salary": "20k-30k",
+        "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate libero blanditiis possimus maiores nostrum porro saepe! Ab qui sint a! Dolorum architecto neque natus rem quasi est soluta facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?",
+        "contack": {
+            "personal_site": " VikasPawar.co.in",
+            "Mobile_No": ["+91 4526855783", "+91 8564125589"],
+            "E-mail": "VikasPawar21@demo.com",
+            "social_links": {
+                "FB": "https://www.facebook.com/VikasPawar21",
+                "Instagram": "https://www.instagram.com/VikasPawar21",
+                "Twiter": "https://twitter.com/VikasPawar21",
+                "linkedin": "https://www.linkedin.com/in/VikasPawar21-24880613a/"
+            }
+        },
+        "Education": [
+            {
+                "level": "SSC",
+                "Score": "65.21%",
+                "institute_Name": "Wisdom Elementary School",
+                "field": null,
+                "board": "Maharashtra State Board",
+                "Passing_Year": 2008
+            },
+            {
+                "level": "Diploma",
+                "Score": "75.21%",
+                "institute_Name": "Government Polytechnic, Pune",
+                "field": "Computer Science",
+                "board": "SPPU",
+                "Passing_Year": 2011
+            },
+            {
+                "level": "BE",
+                "Score": "7.5 CGPA",
+                "institute_Name": "College of Engineering, Punne",
+                "field": "Computer Science",
+                "board": "SPPU",
+                "Passing_Year": 2014
+            }
+        ],
+        "Work_Ex_detail": [
+            {
+                "Post": "Web Designer",
+                "company": "Amazon",
+                "work-period": "2014 - 2016",
+                "About_Ex": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+            },
+            {
+                "Post": "Full Stack Developer",
+                "company": "Soft Web",
+                "work-period": "20018 - Now",
+                "About_Ex": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+            }
+        ],
+        "Professional Skills": ["HTML", "CSS", "JS", "Bootstrap", "Node.js", "React", "Mongodb", "MySql"],
+        "Personal Skills": ["Hard work", "Quick Learner", "Communication Skills", "Creativity"],
+        "languages": ["English", "Hindi", "Marathi"]
+    },
+
+    {
+        "candidate_id": 2,
+        "Name": "Priya Kapoor",
+        "profile_img": "https://i.ibb.co/26JYCzS/Profile2.jpg",
+        "Age": 24,
+        "Gender": "female",
+        "marital_status": "Unmaried",
+        "profession": ["Interior Designer"],
+        "City_id": 1,
+        "State_id": 1,
+        "Address" : "Near Bombay Dyeing, Wadia International Centre, C-2, Pandurang Budhkar Marg, Kamagar Nagar Number 1, Parel, Mumbai, Maharashtra 400025",
+        "Work_Ex": "1 Years",
+        "Current Salary": "15k",
+        "Expected_Salary": "20k-25k",
+        "about": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptate libero blanditiis possimus maiores nostrum porro saepe! Ab qui sint a! Dolorum architecto neque natus rem quasi est soluta facilis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus eveniet a quasi dolore dolor repellat molestias atque voluptate culpa? Reprehenderit blanditiis hic minus sint cupiditate exercitationem molestias soluta ullam fuga. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates eum dicta veritatis sed consectetur perspiciatis molestias, minus eaque laboriosam! Amet alias ullam odit! Sapiente iusto voluptatum voluptates, ex dolorem nemo?",
+        "contack": {
+            "personal_site": " PriyaKapoor.co.in",
+            "Mobile_No": ["+91 1254965835", "+91 8459854862"],
+            "E-mail": "Priya Kapoor@demo.com",
+            "social_links": {
+                "FB": "https://www.facebook.com/PriyaKapoor",
+                "Instagram": "https://www.instagram.com/PriyaKapoor",
+                "Twiter": "https://twitter.com/PriyaKapoor",
+                "linkedin": "https://www.linkedin.com/in/PriyaKapoor-24880613a/"
+            }
+        },
+        "Education": [
+            {
+                "level": "SSC",
+                "Score": "65.21%",
+                "institute_Name": "Mumbai Elementary School",
+                "field": null,
+                "board": "Maharashtra State Board",
+                "Passing_Year": 2014
+            },
+            {
+                "level": "Diploma",
+                "Score": "75.21%",
+                "institute_Name": "Government Polytechnic, Mumbai",
+                "field": "Civil",
+                "board": "MSBTE",
+                "Passing_Year": 2017
+            },
+            {
+                "level": "BE",
+                "Score": "7.5 CGPA",
+                "institute_Name": "College of Engineering, Mumbai",
+                "field": "Civil",
+                "board": "MSBTE",
+                "Passing_Year": 2021
+            }
+        ],
+        "Work_Ex_detail": [
+            {
+                "Post": "Interior  Designer",
+                "company": "Amazon",
+                "work-period": "2021 - now",
+                "About_Ex": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin a ipsum tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus."
+            }
+        ],
+        "Professional Skills": ["Designing"],
+        "Personal Skills": ["Hard work", "Quick Learner", "Communication Skills", "Creativity"],
+        "languages": ["English", "hindi", "marathi"]
+    }
+]
