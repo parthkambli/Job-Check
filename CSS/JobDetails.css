@@ -34,7 +34,7 @@
 }
 
 
-/* Left section */
+/* Right section */
 .about-body{
     text-align: justify;
 }
@@ -50,26 +50,31 @@
   float: right;
 }
 
-.Details-btn{
-  background-color: #072227;
-  color: white;
-  float: right;
-  margin: 5px 5px;
-  width: 100px;
 
+
+.skill {
+  background: #eee;
+  padding: 11px 20px;
+  border-radius: 4px;
+  margin: 10px 10px 0 0;
+  color: #666;
+  overflow: hidden;
+  display: inline-block;
+  max-width: 515px;
+}
+/* Left section */
+.Left-section {
+  border-right: 2px solid #eee;
 }
 
-.Details-btn:hover{
-  background-color: white;
-  color: #072227;
-  border-color: #072227;
+.Company-card {
+  text-align: center;
+  margin: auto;
+  border: 0px;
 }
 
-/* Right section */
-.Right-section{
-    width: 100%;
-    height: 100%;
-    border-right: 0px;
+.sticky-top {
+  top: 66px;
 }
 
 .Apply-btn{

@@ -9,7 +9,7 @@
 
 /* Heading */
 .Compny-Title {
-  text-align: center;   
+  text-align: center;
   margin: auto;
   font-weight: 400;
 }
@@ -24,47 +24,54 @@
   margin: 20px;
 }
 
-.row{
-    margin: 0px;
+.row {
+  margin: 0px;
 }
-/* Left section */
-.about-body{
-    text-align: justify;
+
+/* Right section */
+.about-body {
+  text-align: justify;
 }
-.Jobs-card{
+.Jobs-card {
   margin: 0px;
   border-radius: 0px;
   border: 0px;
-  border-top: 1px solid rgba(0,0,0,.125);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
   width: 100%;
 }
 
-
-.Post-date{
+.Post-date {
   float: right;
 }
-.Company-img{
+.Company-img {
   height: 100%;
 }
 
-.Details-btn{
+.Details-btn {
   background-color: #072227;
   color: white;
   float: right;
   margin: 5px 5px;
   width: 100px;
-
 }
 
-.Details-btn:hover{
+.Details-btn:hover {
   background-color: white;
   color: #072227;
   border-color: #072227;
 }
 
-/* Right section */
-.Right-section{
-    width: 100%;
-    height: 100%;
-    border-right: 0px;
+/* Left section */
+.Left-section {
+  border-right: 2px solid #eee;
+}
+
+.Company-card {
+  text-align: center;
+  margin: auto;
+  border: 0px;
+}
+
+.sticky-top {
+  top: 66px;
 }
